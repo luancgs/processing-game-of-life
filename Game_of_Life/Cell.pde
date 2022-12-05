@@ -22,7 +22,7 @@ class Cell {
   Universe universe;
 
   Cell(int col, int lin, Universe uni) {
-    state = floor(random(2)) == 1 ? true : false;
+    state = random(1) > 0.5 ? true : false;
     column = col;
     line = lin;
     universe = uni;
